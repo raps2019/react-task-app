@@ -34,7 +34,7 @@ class App extends Component {
     this.setState({
       tasks: [...this.state.tasks, obj],
       task: '',
-    });
+    }, () => console.log(this.state.tasks));
   }
 
   handleDelete(e) {
